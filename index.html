@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Jednoduché komentáře</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .comment {
+            background-color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .comment p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jednoduché komentáře</h1>
+    <form id="comment-form">
+        <div class="form-group">
+            <label for="name">Jméno:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="comment">Komentář:</label>
+            <textarea id="comment" rows="4" required></textarea>
+        </div>
+        <button type="button" onclick="addComment()">Přidat komentář</button>
+    </form>
+    <div id="comments-section"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
